@@ -1,4 +1,5 @@
 from vivify.vivify import (
+    Config,
     Vivifiable,
     VivificationError,
     Vivifier,
@@ -13,6 +14,7 @@ from vivify.vivify import (
 )
 
 __all__ = [
+    "Config",
     "Vivifier",
     "Vivifiable",
     "VivificationError",

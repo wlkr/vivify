@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.1] - 2022-08-17
+
+### Changed
+
+- Logging decorator no longer erases function type hints
+- Updated copyright notice year
+
 ## [1.0.0] - 2022-08-12
 
 ### Added
@@ -19,6 +26,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 Nothing to see here... 🦗
 
-[Unreleased]: https://github.com/wlkr/vivify/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/wlkr/vivify/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/wlkr/vivify/compare/v1.0.1...v1.0.0
 [1.0.0]: https://github.com/wlkr/vivify/compare/v1.0.0...v0.0.0
 [0.0.0]: https://github.com/wlkr/vivify/releases/tag/v0.0.0

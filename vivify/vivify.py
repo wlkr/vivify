@@ -13,6 +13,7 @@ from typing import (
     Iterable,
     Mapping,
     Optional,
+    TypeVar,
     Union,
     get_type_hints,
 )
@@ -29,7 +30,7 @@ __email__ = "adam@wlkr.dev"
 __license__ = "Apache-2.0"
 __maintainer__ = __author__
 __status__ = "Development"
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 
 # setup logging
 log: Logger = getLogger(__name__)
@@ -37,8 +38,10 @@ log.addHandler(NullHandler())
 
 INSTANCE_SECTION: Final[str] = "vivify"
 
+T = TypeVar("T")
 
-def entry_exit_logging(function: Callable[..., Any]) -> Callable[..., Any]:
+
+def entry_exit_logging(function: Callable[..., T]) -> Callable[..., T]:
     """Wrap a function with entry and exit debug logging.
 
     Args:
